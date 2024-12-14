@@ -38,7 +38,7 @@ export default function RootLayout({
     }}>
       <html lang="en">
         <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
-          <UserButton />
+          
           <ThemeProvider>
             {children}
           </ThemeProvider>
