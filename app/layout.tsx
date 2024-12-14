@@ -2,6 +2,7 @@ import { ClerkProvider, UserButton } from '@clerk/nextjs'
 import './globals.css'
 import { Inter, Space_Grotesk } from 'next/font/google'
 import type { Metadata } from 'next'
+import { ThemeProvider } from '@/context/ThemeContext'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -38,7 +39,9 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
           <UserButton />
-          {children}
+          <ThemeProvider>
+            {children}
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
