@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SignedIn, UserButton } from '@clerk/nextjs'
 import Theme from './Theme'
+import MobileNav from './MobileNav'
 
 
 const Navbar = () => {
@@ -25,6 +26,7 @@ const Navbar = () => {
              }}/>
         </SignedIn>
       </div>
+      <MobileNav />
     </nav>
   )
 }
