@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { SignedIn, UserButton } from '@clerk/nextjs'
 import Theme from './Theme'
 import MobileNav from './MobileNav'
+import SearchGlobal from "../search/SearchGlobal"
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
         <Image src='/assets/images/site-logo.svg' width={23} height={23} alt="DevFlow" />
         <p className='h2-bold font-spaceGrostek text-dark-100 dark:text-light-900 max-sm:hidden'>Dev <span className='text-primary-500'>Flow</span></p>
       </Link>
-      SearchGlobal 
+      <SearchGlobal/> 
       <div className="flex-between gap-5">
         <Theme/>
         <SignedIn>
