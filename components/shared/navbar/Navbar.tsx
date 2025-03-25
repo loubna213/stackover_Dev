@@ -5,7 +5,6 @@ import Theme from './Theme'
 import MobileNav from './MobileNav'
 import SearchGlobal from "../search/SearchGlobal"
 
-
 const Navbar = () => {
   return (
     <nav className='flex-between gap-5 background-light900_dark200 fixed z-50 w-full dark:shadow-none sm:px-12 shadow-light-300 p-6'>
